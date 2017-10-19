@@ -1,6 +1,6 @@
 {
   "name": "encrypted-db",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Encrypted IndexedDB wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
     "release:docs": "yarn doc",
     "release:copy": "node ./scripts/release.js",
     "prerelease": "yarn release:build && yarn release:copy",
-    "release": "npm publish dist --tag next"
+    "release": "npm publish --cwd ./dist --tag next"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1"
