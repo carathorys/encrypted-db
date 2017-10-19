@@ -8,7 +8,7 @@
     "target": "es2016",
     "noImplicitAny": false,
     "declaration": true,
-    "removeComments": true,
+    "removeComments": false,
     "sourceMap": true,
     "inlineSources": true,
     "strict": true

@@ -1,24 +1,24 @@
 {
   "extends": "tslint:latest",
   "rules": {
-      "member-ordering": [
-          false
-      ],
-      "quotemark": {
-          "options": "single",
-          "severity": "warning"
-      },
-      "max-classes-per-file": [
-          false
-      ],
-      "max-line-length": [
-          false
-      ]
+    "member-ordering": [
+      false
+    ],
+    "quotemark": {
+      "options": "single",
+      "severity": "warning"
+    },
+    "max-classes-per-file": [
+      false
+    ],
+    "max-line-length": [
+      false
+    ]
   },
   "jsRules": {
-      "no-require-imports": false,
-      "quotemark": {
-          "options": "single"
-      }
+    "no-require-imports": false,
+    "quotemark": {
+      "options": "single"
+    }
   }
 }

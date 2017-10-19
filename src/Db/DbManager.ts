@@ -1,11 +1,17 @@
 import { TableInfo } from './Tables/TableInfo';
 
+/**
+ * @class DbManager
+ * @description Initializes IndexedDB instance, and creates tables
+ * @author carathorys
+ */
 export class DbManager {
+
+  public db: IDBDatabase;
 
   private hasInitialized: boolean = false;
   private dbOpenedCallbackList: Array<(db: IDBDatabase) => void>;
   private IndxDb: IDBFactory;
-  public db: IDBDatabase;
 
   constructor(protected dbName: string, protected tInfos: TableInfo[]) {
     this.IndxDb = window.indexedDB;
@@ -13,6 +19,9 @@ export class DbManager {
     this.OpenInitDB();
   }
 
+  /**
+   * @description Opens and initializes IndexedDB, and updates it if it's necessary
+   */
   private OpenInitDB() {
     const req: IDBOpenDBRequest = this.IndxDb.open(this.dbName);
     req.onupgradeneeded = this._addTables;
@@ -40,11 +49,13 @@ export class DbManager {
     let tInfo: TableInfo;
 
     for (const it in this.tInfos) {
-      tInfo = this.tInfos[it];
-      params = { keyPath: tInfo.PrimaryFieldName };
-      let tblLocal: IDBObjectStore;
-      tblLocal = this.db.createObjectStore(tInfo.TableName, params);
-      tblLocal.createIndex(tInfo.PrimaryIndexName, tInfo.PrimaryFieldName);
+      if (this.tInfos.hasOwnProperty(it)) {
+        tInfo = this.tInfos[it];
+        params = { keyPath: tInfo.PrimaryFieldName };
+        let tblLocal: IDBObjectStore;
+        tblLocal = this.db.createObjectStore(tInfo.TableName, params);
+        tblLocal.createIndex(tInfo.PrimaryIndexName, tInfo.PrimaryFieldName);
+      }
     }
   }
 
