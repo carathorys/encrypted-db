@@ -62,4 +62,5 @@ const files = ['README.md', 'CHANGELOG.md', 'LICENSE'];
 
 Promise.all(files.map(file => copyFile(file)))
   .then(() => createPackageFile())
-  .then(() => copyDocs(path.resolve(__dirname, '../docs'), path.resolve(__dirname, '../dist/docs/')));
+  //.then(() => copyDocs(path.resolve(__dirname, '../docs'), path.resolve(__dirname, '../dist/docs/')))
+  ;

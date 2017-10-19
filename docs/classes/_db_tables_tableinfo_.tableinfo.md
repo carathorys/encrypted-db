@@ -30,7 +30,7 @@
 ### ⊕ **new TableInfo**(TableName: *`string`*, PrimaryFieldName: *`string`*, PrimaryIndexName: *`string`*): [TableInfo](_db_tables_tableinfo_.tableinfo.md)
 
 
-*Defined in [Db/Tables/TableInfo.ts:4](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/Tables/TableInfo.ts#L4)*
+*Defined in [Db/Tables/TableInfo.ts:4](https://github.com/carathorys/encrypted-db/blob/05b3f42/src/Db/Tables/TableInfo.ts#L4)*
 
 
 
@@ -58,7 +58,7 @@
 
 **●  PrimaryFieldName**:  *`string`* 
 
-*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/Tables/TableInfo.ts#L5)*
+*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/05b3f42/src/Db/Tables/TableInfo.ts#L5)*
 
 
 
@@ -72,7 +72,7 @@ ___
 
 **●  PrimaryIndexName**:  *`string`* 
 
-*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/Tables/TableInfo.ts#L5)*
+*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/05b3f42/src/Db/Tables/TableInfo.ts#L5)*
 
 
 
@@ -86,7 +86,7 @@ ___
 
 **●  TableName**:  *`string`* 
 
-*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/Tables/TableInfo.ts#L5)*
+*Defined in [Db/Tables/TableInfo.ts:5](https://github.com/carathorys/encrypted-db/blob/05b3f42/src/Db/Tables/TableInfo.ts#L5)*
 
 
 
