@@ -22,15 +22,13 @@
     "release:docs": "yarn doc",
     "release:copy": "node ./scripts/release.js",
     "prerelease": "yarn release:build && yarn release:copy",
-    "release": "np --no-publish --any-branch",
-    "postrelease": "npm publish dist --tag next"
+    "release": "npm publish dist --tag next"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1"
   },
   "devDependencies": {
     "fs-extra": "^4.0.2",
-    "np": "^2.16.0",
     "rimraf": "^2.6.2",
     "semver": "^5.4.1",
     "tslint": "^5.7.0",
