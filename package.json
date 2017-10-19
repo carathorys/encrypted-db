@@ -1,17 +1,22 @@
 {
   "name": "encrypted-db",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Encrypted IndexedDB wrapper",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "http://github.com/carathorys/encrypted-db",
   "author": "carathorys",
   "license": "MIT",
-  "private": true,
+  "preview": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "tslint": "tslint src/**/*.ts -t verbose"
+  },
   "dependencies": {
-    "awesome-typescript-loader": "^3.2.3",
-    "crypto-js": "^3.1.9-1",
-    "typescript": "^2.5.3",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.2"
+    "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
   }
 }
