@@ -46,7 +46,7 @@
 ### ⊕ **new DbManager**(dbName: *`string`*, tInfos: *[TableInfo](_db_tables_tableinfo_.tableinfo.md)[]*): [DbManager](_db_dbmanager_.dbmanager.md)
 
 
-*Defined in [Db/DbManager.ts:14](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L14)*
+*Defined in [Db/DbManager.ts:14](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L14)*
 
 
 
@@ -73,7 +73,7 @@
 
 **●  IndxDb**:  *`IDBFactory`* 
 
-*Defined in [Db/DbManager.ts:14](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L14)*
+*Defined in [Db/DbManager.ts:14](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L14)*
 
 
 
@@ -87,7 +87,7 @@ ___
 
 **●  db**:  *`IDBDatabase`* 
 
-*Defined in [Db/DbManager.ts:10](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L10)*
+*Defined in [Db/DbManager.ts:10](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L10)*
 
 
 
@@ -101,7 +101,7 @@ ___
 
 **●  dbName**:  *`string`* 
 
-*Defined in [Db/DbManager.ts:16](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L16)*
+*Defined in [Db/DbManager.ts:16](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L16)*
 
 
 
@@ -115,7 +115,7 @@ ___
 
 **●  dbOpenedCallbackList**:  *`Array`.<`function`>* 
 
-*Defined in [Db/DbManager.ts:13](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L13)*
+*Defined in [Db/DbManager.ts:13](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L13)*
 
 
 
@@ -129,7 +129,7 @@ ___
 
 **●  hasInitialized**:  *`boolean`*  = false
 
-*Defined in [Db/DbManager.ts:12](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L12)*
+*Defined in [Db/DbManager.ts:12](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L12)*
 
 
 
@@ -143,7 +143,7 @@ ___
 
 **●  tInfos**:  *[TableInfo](_db_tables_tableinfo_.tableinfo.md)[]* 
 
-*Defined in [Db/DbManager.ts:16](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L16)*
+*Defined in [Db/DbManager.ts:16](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L16)*
 
 
 
@@ -161,7 +161,7 @@ ___
 
 
 
-*Defined in [Db/DbManager.ts:31](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L31)*
+*Defined in [Db/DbManager.ts:31](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L31)*
 
 
 
@@ -191,7 +191,7 @@ ___
 
 
 
-*Defined in [Db/DbManager.ts:25](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L25)*
+*Defined in [Db/DbManager.ts:25](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L25)*
 
 
 *__description__*: Opens and initializes IndexedDB, and updates it if it's necessary
@@ -216,7 +216,7 @@ ___
 
 
 
-*Defined in [Db/DbManager.ts:62](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L62)*
+*Defined in [Db/DbManager.ts:62](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L62)*
 
 
 
@@ -238,7 +238,7 @@ ___
 
 
 
-*Defined in [Db/DbManager.ts:46](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L46)*
+*Defined in [Db/DbManager.ts:46](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L46)*
 
 
 
@@ -269,7 +269,7 @@ ___
 
 
 
-*Defined in [Db/DbManager.ts:38](https://github.com/carathorys/encrypted-db/blob/b792d48/src/Db/DbManager.ts#L38)*
+*Defined in [Db/DbManager.ts:38](https://github.com/carathorys/encrypted-db/blob/725b9f8/src/Db/DbManager.ts#L38)*
 
 
 

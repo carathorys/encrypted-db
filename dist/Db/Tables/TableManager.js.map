@@ -1,1 +1,0 @@
-{"version":3,"file":"TableManager.js","sourceRoot":"","sources":["../../../src/Db/Tables/TableManager.ts"],"names":[],"mappings":";;AAEA;;GAEG;AACH;CAEC;AAFD,oCAEC","sourcesContent":["import { TableInfo } from './TableInfo';\r\n\r\n/**\r\n * @class TableManager\r\n */\r\nexport class TableManager {\r\n\r\n}\r\n"]}

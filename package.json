@@ -1,6 +1,6 @@
 {
   "name": "encrypted-db",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Encrypted IndexedDB wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
