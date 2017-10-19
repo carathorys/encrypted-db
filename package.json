@@ -1,8 +1,9 @@
 {
   "name": "encrypted-db",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Encrypted IndexedDB wrapper",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "http://github.com/carathorys/encrypted-db",
   "author": "carathorys",
   "license": "MIT",
@@ -13,7 +14,8 @@
     "tslint": "tslint src/**/*.ts -t verbose"
   },
   "dependencies": {
-    "crypto-js": "^3.1.9-1"
+    "crypto-js": "^3.1.9-1",
+    "flow": "^0.2.3"
   },
   "devDependencies": {
     "tslint": "^5.7.0",
