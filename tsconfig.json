@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es2016",
+    "noImplicitAny": false,
+    "declaration": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "strict": true
+  },
+  "compileOnSave": true,
+  "typeAcquisition": {
+    "enable": true
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
