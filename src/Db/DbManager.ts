@@ -7,6 +7,9 @@ import { TableInfo } from './Tables/TableInfo';
  */
 export class DbManager {
 
+  public static readonly NULL_OR_EMPTY_TABLES: string = 'Table\'s list should not be null, undefined, or empty array!';
+  public static readonly NULL_OR_EMPTY_NAME: string = 'Database name should not be null, undefined, or empty string!';
+
   public db: IDBDatabase;
 
   private hasInitialized: boolean = false;
