@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+      "outDir": "./test-js",
+      "module": "commonjs",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "target": "es2016",
+      "declaration": false,
+      "sourceMap": false,
+      "inlineSources": false
+  },
+  "files": [
+      "./test/index.ts"
+  ]
+}
