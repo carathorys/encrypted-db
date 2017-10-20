@@ -1,4 +1,4 @@
-import { TableInfo } from './Tables/TableInfo';
+import { DbTable } from './DbTable';
 
 /**
  * @class DbManager
@@ -16,7 +16,12 @@ export class DbManager {
   private dbOpenedCallbackList: Array<(db: IDBDatabase) => void>;
   private IndxDb: IDBFactory;
 
-  constructor(protected dbName: string, protected tInfos: TableInfo[]) {
+  constructor(protected dbName: string, protected tInfos: DbTable[]) {
+    if (!dbName)
+      throw new Error(DbManager.NULL_OR_EMPTY_NAME);
+    if (!tInfos || !(tInfos instanceof Array) || tInfos.length < 1)
+      throw new Error(DbManager.NULL_OR_EMPTY_TABLES);
+
     this.IndxDb = window.indexedDB;
     this.dbOpenedCallbackList = [];
     this.OpenInitDB();
@@ -49,11 +54,10 @@ export class DbManager {
   private _addTables(e: any) {
     this.db = e.target.result;
     let params: IDBObjectStoreParameters;
-    let tInfo: TableInfo;
 
     for (const it in this.tInfos) {
       if (this.tInfos.hasOwnProperty(it)) {
-        tInfo = this.tInfos[it];
+        const tInfo: DbTable = this.tInfos[it];
         params = { keyPath: tInfo.PrimaryFieldName };
         let tblLocal: IDBObjectStore;
         tblLocal = this.db.createObjectStore(tInfo.TableName, params);

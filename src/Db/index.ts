@@ -1,2 +1,2 @@
 export * from './DbManager';
-export * from './Tables';
+export * from './DbTable';

@@ -1,6 +1,7 @@
 import * as chai from 'chai';
 import { suite, test } from 'mocha-typescript';
-import { DbManager, TableInfo } from '../src';
+import { DbManager, DbTable } from '../src';
+
 
 @suite
 export class DbManagerTest {
@@ -60,14 +61,14 @@ export class DbManagerTest {
 
   @test('Initialize DBManager instance with only table parameter')
   public t8() {
-    const dbManager = () => new DbManager(null, [new TableInfo('TableName', 'CustomerID', 'CustomerID')]);
+    const dbManager = () => new DbManager(null, [new DbTable('TableName', 'id', 'id')]);
     chai.expect(dbManager).to.throw(DbManager.NULL_OR_EMPTY_NAME);
     chai.expect(dbManager).not.to.throw(DbManager.NULL_OR_EMPTY_TABLES);
   }
 
   @test('Initialize DBManager instance with valid parameters')
   public t9() {
-    const dbManager = () => new DbManager('db', [new TableInfo('TableName', 'CustomerID', 'CustomerID')]);
+    const dbManager = () => new DbManager('db', [new DbTable('TableName', 'id', 'id')]);
     chai.expect(dbManager).not.to.throw();
   }
 
