@@ -17,10 +17,12 @@ export class DbManager {
   private IndxDb: IDBFactory;
 
   constructor(protected dbName: string, protected tInfos: DbTable[]) {
-    if (!dbName)
+    if (!dbName) {
       throw new Error(DbManager.NULL_OR_EMPTY_NAME);
-    if (!tInfos || !(tInfos instanceof Array) || tInfos.length < 1)
+    }
+    if (!tInfos || !(tInfos instanceof Array) || tInfos.length < 1) {
       throw new Error(DbManager.NULL_OR_EMPTY_TABLES);
+    }
 
     this.IndxDb = window.indexedDB;
     this.dbOpenedCallbackList = [];
